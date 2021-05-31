@@ -1,0 +1,4 @@
+# Project exclude paths
+/consumer-movie/target/
+/eureka/target/
+/provider-user/target/
