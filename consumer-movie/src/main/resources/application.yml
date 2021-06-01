@@ -1,2 +1,10 @@
 server:
-  port: 8810
+  port: 8310
+
+spring:
+  application:
+    name: consumer-movie
+eureka:
+  client:
+    service-url:
+      defaultZone: http://peer1:8761/eureka/,http://peer2:8762/eureka/

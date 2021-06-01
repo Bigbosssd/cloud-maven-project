@@ -17,8 +17,7 @@ public class MovieController {
     @GetMapping("/users/{id}")
     public User findById(@PathVariable Long id) {
         // 这里用到了RestTemplate的占位符能力
-        User user = this.restTemplate.getForObject("http://localhost:8761/users/{id}", User.class, id);
         // ...电影微服务的业务...
-        return user;
+        return this.restTemplate.getForObject("http://localhost:8300/users/{id}", User.class, id);
     }
 }
