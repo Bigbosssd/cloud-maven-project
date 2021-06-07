@@ -18,6 +18,9 @@
         <module>eureka</module>
         <module>consumer-movie</module>
         <module>provider-user</module>
+        <module>consumer-movie-ribbon</module>
+        <module>ribbon</module>
+        <module>consumer-movie-feign</module>
     </modules>
 
     <properties>

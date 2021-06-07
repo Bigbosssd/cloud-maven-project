@@ -1,0 +1,15 @@
+server:
+  port: 8311
+
+spring:
+  application:
+    name: consumer-movie-ribbon
+eureka:
+  client:
+    service-url:
+      defaultZone: http://peer1:8761/eureka/,http://peer2:8762/eureka/
+## 服务名
+#provider-user:
+#  ribbon:
+#    # 设置ribbon配置
+#    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule

@@ -1,6 +1,42 @@
 server:
   # 指定Tomcat端口
   port: 8300
+spring:
+  profiles: provider-user1
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/for_spring_cloud
+    username: root
+    password: 123456
+  application:
+    name: provider-user
+eureka:
+  client:
+    service-url:
+      defaultZone: http://peer1:8761/eureka/,http://peer2:8762/eureka/
+
+---
+server:
+  # 指定Tomcat端口
+  port: 8301
+spring:
+  profiles: provider-user2
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/for_spring_cloud
+    username: root
+    password: 123456
+  application:
+    name: provider-user
+eureka:
+  client:
+    service-url:
+      defaultZone: http://peer1:8761/eureka/,http://peer2:8762/eureka/
+
+
+
+
+
 #management:
 #  endpoint:
 #    health:
@@ -10,14 +46,3 @@ server:
 #    web:
 #      exposure:
 #        include: '*'
-spring:
-  datasource:
-    driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/for_spring_cloud
-    username: root
-    password: 123456
-  application:
-    name: provider-user
-eureka:
-  instance:
-    ip-address: http://localhost:8080/eureka/

@@ -3,6 +3,8 @@ package com.example.controller;
 import com.example.domain.User;
 import com.example.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Bean;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,8 +16,12 @@ public class UserController {
     @Autowired
     private UserService userService;
 
+    @Value("${spring.profiles}")
+    String profiles;
+
     @GetMapping("/{id}")
     public User findById(@PathVariable String id) {
+        System.out.println("this is :" + profiles);
         return this.userService.findById(Long.parseLong(id));
     }
 }
