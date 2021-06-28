@@ -1,0 +1,33 @@
+server:
+  port: 8313
+spring:
+  application:
+    name: consumer-movie-feign-hystrix
+eureka:
+  client:
+    service-url:
+      defaultZone: http://peer1:8761/eureka/,http://peer2:8762/eureka/
+logging:
+  level:
+    com.example.feignclient.UserFeignClient: debug
+
+# 配置单台feign日志
+feign:
+  client:
+    config:
+      provider-user:
+        loggerLevel: full
+
+management:
+  endpoint:
+    health:
+      show-details: always
+
+## 配置全局feign日志打印
+#feign:
+#  client:
+#    config:
+#      default:
+#        connectTimeout: 5000
+#        readTimeout: 5000
+#        loggerLevel: basic

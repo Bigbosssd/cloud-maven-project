@@ -19,8 +19,11 @@
         <module>consumer-movie</module>
         <module>provider-user</module>
         <module>consumer-movie-ribbon</module>
-        <module>ribbon</module>
         <module>consumer-movie-feign</module>
+        <module>test</module>
+        <module>consumer-movie-hystrix</module>
+        <module>consumer-movie-feign-with-hystrix</module>
+        <module>hystrix-dashboard</module>
     </modules>
 
     <properties>
