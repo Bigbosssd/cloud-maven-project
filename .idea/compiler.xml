@@ -7,6 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="turbine-server" />
         <module name="consumer-movie-feign-with-hystrix" />
         <module name="consumer-movie-hystrix" />
         <module name="consumer-movie-feign" />
@@ -38,6 +39,7 @@
       <module name="provider-user" options="-parameters" />
       <module name="ribbon" options="-parameters" />
       <module name="test" options="-parameters" />
+      <module name="turbine-server" options="-parameters" />
     </option>
   </component>
 </project>

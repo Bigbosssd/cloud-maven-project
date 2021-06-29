@@ -24,6 +24,7 @@
         <module>consumer-movie-hystrix</module>
         <module>consumer-movie-feign-with-hystrix</module>
         <module>hystrix-dashboard</module>
+        <module>turbine-server</module>
     </modules>
 
     <properties>

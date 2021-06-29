@@ -2,6 +2,7 @@ package com.example.controller;
 
 import com.example.domain.User;
 import com.example.service.UserService;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,6 +20,7 @@ public class UserController {
     String profiles;
 
     @GetMapping("/{id}")
+    @HystrixCommand
     public User findById(@PathVariable String id) {
         System.out.println("this is :" + profiles);
         return userService.findById(Long.parseLong(id));
