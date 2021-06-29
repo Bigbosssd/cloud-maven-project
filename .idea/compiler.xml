@@ -16,6 +16,7 @@
         <module name="consumer-movie" />
         <module name="demo" />
         <module name="provider-user" />
+        <module name="config-server" />
         <module name="consumer-movie-feign" />
         <module name="hystrix-dashboard" />
         <module name="gateway-zuul-filter" />
@@ -30,6 +31,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="config-server" options="-parameters" />
       <module name="consumer-movie" options="-parameters" />
       <module name="consumer-movie-feign" options="-parameters" />
       <module name="consumer-movie-feign-with-hystrix" options="-parameters" />

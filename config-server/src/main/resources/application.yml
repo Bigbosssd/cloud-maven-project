@@ -1,0 +1,11 @@
+server:
+  port: 8990
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          # Git仓库地址
+          uri: git@github.com:Bigbosssd/maven-project-config-repo.git
