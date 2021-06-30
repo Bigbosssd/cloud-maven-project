@@ -1,0 +1,158 @@
+server:
+  port: 8991
+spring:
+  profiles: config-server1
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          # https形式需要配置username和password明码，不建议。
+          #          uri: https://gitee.com/bigbosssd/spring-cloud-config-20210630.git
+          search-paths: maven-project/** # 如果配置仓库内有文件夹一定要设置这个（不过这样获取不到根目录下的了）
+          default-label: master # 默认分支
+          uri: git@gitee.com:bigbosssd/spring-cloud-config-20210630.git
+          ignore-local-ssh-settings: true
+          strict-host-key-checking: false
+          private-key: |
+            -----BEGIN RSA PRIVATE KEY-----
+            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
+            -----END RSA PRIVATE KEY-----
+eureka:
+  client:
+    service-url:
+      defaultZone: http://peer1:8761/eureka/,http://peer2:8762/eureka/
+
+---
+server:
+  port: 8992
+spring:
+  profiles: config-server2
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          # https形式需要配置username和password明码，不建议。
+          #          uri: https://gitee.com/bigbosssd/spring-cloud-config-20210630.git
+          search-paths: maven-project/** # 如果配置仓库内有文件夹一定要设置这个（不过这样获取不到根目录下的了）
+          default-label: master # 默认分支
+          uri: git@gitee.com:bigbosssd/spring-cloud-config-20210630.git
+          ignore-local-ssh-settings: true
+          strict-host-key-checking: false
+          private-key: |
+            -----BEGIN RSA PRIVATE KEY-----
+            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
+            -----END RSA PRIVATE KEY-----
+eureka:
+  client:
+    service-url:
+      defaultZone: http://peer1:8761/eureka/,http://peer2:8762/eureka/
+
+#encrypt: # encrypt必须卸载bootstrap里，否则无效
+#  key: the world # 对称秘钥
+
+#encrypt:
+#  keyStore: # 非对称加密
+#    location: classpath:/server.jks # jks文件的路径
+#    password: letmein               # storepass
+#    alias: mytestkey                # alias
+#    secret: changeme                # keypass

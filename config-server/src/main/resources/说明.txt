@@ -1,0 +1,23 @@
+
+Spring Cloud Config Server提供了RESTful API，可用来访问存放在Git仓库中的配置文件。
+/{application}/{profile}[/{label}]
+/{application}-{profile}.yml
+/{label}/{application}-{profile}.yml
+/{application}-{profile}.properties
+/{label}/{application}-{profile}.properties
+
+TIPS
+事实上，可使用Spring Cloud Config实现配置的“继承”与“组合”，举个例子——
+假设有一个应用：microservice-foo ，其profile是dev，
+那么其实Spring Cloud Config会查找如下几个文件：
+microservice-foo-dev.yml
+microservice-foo.yml
+application-dev.yml
+application.yml
+
+对于相同属性的配置，从上至下优先级逐渐递减；最终获得的配置属性是四个文件的组合。
+由此，不难分析，可如下规划几个配置文件：
+microservice-foo-dev.yml 作为指定应用在指定profile下的配置文件
+microservice-foo.yml 作为制定应用在任何profile下都通用的配置文件
+application-dev.yml 作为所有应用在指定profile下的配置文件
+application.yml 作为所有应用在任何profile下都通用的配置文件
