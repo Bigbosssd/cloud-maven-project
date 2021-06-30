@@ -29,6 +29,7 @@
         <module>gateway-zuul-filter</module>
         <module>config-server</module>
         <module>config-client</module>
+        <module>provider-user-sleuth</module>
     </modules>
 
     <properties>

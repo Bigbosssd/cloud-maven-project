@@ -1,0 +1,34 @@
+server:
+  # 指定Tomcat端口
+  port: 8310
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/for_spring_cloud
+    username: root
+    password: 123456
+  application:
+    name: provider-user-sleuth    # 对应config server所获取的配置文件的{application}
+#  cloud:
+#    config:
+#      uri: http://localhost:8991/ # 指定Config Server的地址，默认是http://localhost:8888
+#      profile: dev # profile对应config server所获取的配置文件中的{profile}
+#      label: master # 指定Git仓库的分支，对应config server所获取的配置文件的{label}
+eureka:
+  client:
+    service-url:
+      defaultZone: http://peer1:8761/eureka/,http://peer2:8762/eureka/
+logging:
+  level:
+    root: INFO
+    org.springframework.cloud.sleuth: DEBUG
+
+#management:
+#  endpoint:
+#    health:
+#      # 健康检查详情
+#      show-details: always
+#  endpoints:
+#    web:
+#      exposure:
+#        include: '*'
