@@ -22,6 +22,7 @@
         <module name="hystrix-dashboard" />
         <module name="gateway-zuul-filter" />
         <module name="consumer-movie-ribbon" />
+        <module name="spring-cloud-gateway" />
         <module name="provider-user-sleuth" />
       </profile>
     </annotationProcessing>
@@ -47,6 +48,7 @@
       <module name="provider-user" options="-parameters" />
       <module name="provider-user-sleuth" options="-parameters" />
       <module name="ribbon" options="-parameters" />
+      <module name="spring-cloud-gateway" options="-parameters" />
       <module name="test" options="-parameters" />
       <module name="turbine-server" options="-parameters" />
       <module name="zuul" options="-parameters" />

@@ -30,6 +30,7 @@
         <module>config-server</module>
         <module>config-client</module>
         <module>provider-user-sleuth</module>
+        <module>spring-cloud-gateway</module>
     </modules>
 
     <properties>
