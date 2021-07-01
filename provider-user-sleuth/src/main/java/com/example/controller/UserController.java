@@ -19,6 +19,7 @@ public class UserController {
     @GetMapping("/{id}")
     @HystrixCommand
     public User findById(@PathVariable String id) {
+        System.out.println("确实进了sleuth");
         return userService.findById(Long.parseLong(id));
     }
 }

@@ -1,0 +1,62 @@
+[2021-07-01T10:02:28,074][INFO ][o.e.e.NodeEnvironment    ] [YSXu_08] using [1] data paths, mounts [[Windows (C:)]], net usable_space [10.9gb], net total_space [100gb], types [NTFS]
+[2021-07-01T10:02:28,076][INFO ][o.e.e.NodeEnvironment    ] [YSXu_08] heap size [989.8mb], compressed ordinary object pointers [true]
+[2021-07-01T10:02:28,081][INFO ][o.e.n.Node               ] [YSXu_08] node name derived from node ID [YSXu_08pSiOjKW1cwqsk_A]; set [node.name] to override
+[2021-07-01T10:02:28,081][INFO ][o.e.n.Node               ] [YSXu_08] version[6.5.3], pid[32340], build[default/zip/159a78a/2018-12-06T20:11:28.826501Z], OS[Windows 10/10.0/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_152/25.152-b16]
+[2021-07-01T10:02:28,082][INFO ][o.e.n.Node               ] [YSXu_08] JVM arguments [-Xms1g, -Xmx1g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.io.tmpdir=C:\Users\Lenovo\AppData\Local\Temp\elasticsearch, -XX:+HeapDumpOnOutOfMemoryError, -XX:HeapDumpPath=data, -XX:ErrorFile=logs/hs_err_pid%p.log, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintTenuringDistribution, -XX:+PrintGCApplicationStoppedTime, -Xloggc:logs/gc.log, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=32, -XX:GCLogFileSize=64m, -Delasticsearch, -Des.path.home=C:\Users\Lenovo\Desktop\elasticsearch-6.5.3, -Des.path.conf=C:\Users\Lenovo\Desktop\elasticsearch-6.5.3\config, -Des.distribution.flavor=default, -Des.distribution.type=zip]
+[2021-07-01T10:02:32,563][INFO ][o.e.p.PluginsService     ] [YSXu_08] loaded module [aggs-matrix-stats]
+[2021-07-01T10:02:32,563][INFO ][o.e.p.PluginsService     ] [YSXu_08] loaded module [analysis-common]
+[2021-07-01T10:02:32,563][INFO ][o.e.p.PluginsService     ] [YSXu_08] loaded module [ingest-common]
+[2021-07-01T10:02:32,565][INFO ][o.e.p.PluginsService     ] [YSXu_08] loaded module [lang-expression]
+[2021-07-01T10:02:32,566][INFO ][o.e.p.PluginsService     ] [YSXu_08] loaded module [lang-mustache]
+[2021-07-01T10:02:32,567][INFO ][o.e.p.PluginsService     ] [YSXu_08] loaded module [lang-painless]
+[2021-07-01T10:02:32,567][INFO ][o.e.p.PluginsService     ] [YSXu_08] loaded module [mapper-extras]
+[2021-07-01T10:02:32,567][INFO ][o.e.p.PluginsService     ] [YSXu_08] loaded module [parent-join]
+[2021-07-01T10:02:32,568][INFO ][o.e.p.PluginsService     ] [YSXu_08] loaded module [percolator]
+[2021-07-01T10:02:32,568][INFO ][o.e.p.PluginsService     ] [YSXu_08] loaded module [rank-eval]
+[2021-07-01T10:02:32,568][INFO ][o.e.p.PluginsService     ] [YSXu_08] loaded module [reindex]
+[2021-07-01T10:02:32,569][INFO ][o.e.p.PluginsService     ] [YSXu_08] loaded module [repository-url]
+[2021-07-01T10:02:32,569][INFO ][o.e.p.PluginsService     ] [YSXu_08] loaded module [transport-netty4]
+[2021-07-01T10:02:32,570][INFO ][o.e.p.PluginsService     ] [YSXu_08] loaded module [tribe]
+[2021-07-01T10:02:32,570][INFO ][o.e.p.PluginsService     ] [YSXu_08] loaded module [x-pack-ccr]
+[2021-07-01T10:02:32,570][INFO ][o.e.p.PluginsService     ] [YSXu_08] loaded module [x-pack-core]
+[2021-07-01T10:02:32,571][INFO ][o.e.p.PluginsService     ] [YSXu_08] loaded module [x-pack-deprecation]
+[2021-07-01T10:02:32,571][INFO ][o.e.p.PluginsService     ] [YSXu_08] loaded module [x-pack-graph]
+[2021-07-01T10:02:32,572][INFO ][o.e.p.PluginsService     ] [YSXu_08] loaded module [x-pack-logstash]
+[2021-07-01T10:02:32,572][INFO ][o.e.p.PluginsService     ] [YSXu_08] loaded module [x-pack-ml]
+[2021-07-01T10:02:32,574][INFO ][o.e.p.PluginsService     ] [YSXu_08] loaded module [x-pack-monitoring]
+[2021-07-01T10:02:32,574][INFO ][o.e.p.PluginsService     ] [YSXu_08] loaded module [x-pack-rollup]
+[2021-07-01T10:02:32,574][INFO ][o.e.p.PluginsService     ] [YSXu_08] loaded module [x-pack-security]
+[2021-07-01T10:02:32,575][INFO ][o.e.p.PluginsService     ] [YSXu_08] loaded module [x-pack-sql]
+[2021-07-01T10:02:32,575][INFO ][o.e.p.PluginsService     ] [YSXu_08] loaded module [x-pack-upgrade]
+[2021-07-01T10:02:32,575][INFO ][o.e.p.PluginsService     ] [YSXu_08] loaded module [x-pack-watcher]
+[2021-07-01T10:02:32,576][INFO ][o.e.p.PluginsService     ] [YSXu_08] no plugins loaded
+[2021-07-01T10:02:36,042][INFO ][o.e.x.s.a.s.FileRolesStore] [YSXu_08] parsed [0] roles from file [C:\Users\Lenovo\Desktop\elasticsearch-6.5.3\config\roles.yml]
+[2021-07-01T10:02:36,603][INFO ][o.e.x.m.j.p.l.CppLogMessageHandler] [YSXu_08] [controller/29388] [Main.cc@109] controller (64 bit): Version 6.5.3 (Build f418a701d70c6e) Copyright (c) 2018 Elasticsearch BV
+[2021-07-01T10:02:36,940][DEBUG][o.e.a.ActionModule       ] [YSXu_08] Using REST wrapper from plugin org.elasticsearch.xpack.security.Security
+[2021-07-01T10:02:37,103][INFO ][o.e.d.DiscoveryModule    ] [YSXu_08] using discovery type [zen] and host providers [settings]
+[2021-07-01T10:02:37,779][INFO ][o.e.n.Node               ] [YSXu_08] initialized
+[2021-07-01T10:02:37,779][INFO ][o.e.n.Node               ] [YSXu_08] starting ...
+[2021-07-01T10:02:39,207][INFO ][o.e.t.TransportService   ] [YSXu_08] publish_address {127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}, {[::1]:9300}
+[2021-07-01T10:02:42,265][INFO ][o.e.c.s.MasterService    ] [YSXu_08] zen-disco-elected-as-master ([0] nodes joined), reason: new_master {YSXu_08}{YSXu_08pSiOjKW1cwqsk_A}{BPtnocKqR9WFrICwfrZVRA}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=16937574400, xpack.installed=true, ml.max_open_jobs=20, ml.enabled=true}
+[2021-07-01T10:02:42,270][INFO ][o.e.c.s.ClusterApplierService] [YSXu_08] new_master {YSXu_08}{YSXu_08pSiOjKW1cwqsk_A}{BPtnocKqR9WFrICwfrZVRA}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=16937574400, xpack.installed=true, ml.max_open_jobs=20, ml.enabled=true}, reason: apply cluster state (from master [master {YSXu_08}{YSXu_08pSiOjKW1cwqsk_A}{BPtnocKqR9WFrICwfrZVRA}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=16937574400, xpack.installed=true, ml.max_open_jobs=20, ml.enabled=true} committed version [1] source [zen-disco-elected-as-master ([0] nodes joined)]])
+[2021-07-01T10:02:42,313][WARN ][o.e.x.s.a.s.m.NativeRoleMappingStore] [YSXu_08] Failed to clear cache for realms [[]]
+[2021-07-01T10:02:42,359][INFO ][o.e.g.GatewayService     ] [YSXu_08] recovered [0] indices into cluster_state
+[2021-07-01T10:02:42,541][INFO ][o.e.c.m.MetaDataIndexTemplateService] [YSXu_08] adding template [.watch-history-9] for index patterns [.watcher-history-9*]
+[2021-07-01T10:02:42,641][INFO ][o.e.c.m.MetaDataIndexTemplateService] [YSXu_08] adding template [.watches] for index patterns [.watches*]
+[2021-07-01T10:02:42,732][INFO ][o.e.c.m.MetaDataIndexTemplateService] [YSXu_08] adding template [.triggered_watches] for index patterns [.triggered_watches*]
+[2021-07-01T10:02:42,830][INFO ][o.e.c.m.MetaDataIndexTemplateService] [YSXu_08] adding template [.monitoring-logstash] for index patterns [.monitoring-logstash-6-*]
+[2021-07-01T10:02:42,923][INFO ][o.e.c.m.MetaDataIndexTemplateService] [YSXu_08] adding template [.monitoring-es] for index patterns [.monitoring-es-6-*]
+[2021-07-01T10:02:43,027][INFO ][o.e.c.m.MetaDataIndexTemplateService] [YSXu_08] adding template [.monitoring-beats] for index patterns [.monitoring-beats-6-*]
+[2021-07-01T10:02:43,092][INFO ][o.e.c.m.MetaDataIndexTemplateService] [YSXu_08] adding template [.monitoring-alerts] for index patterns [.monitoring-alerts-6]
+[2021-07-01T10:02:43,155][INFO ][o.e.c.m.MetaDataIndexTemplateService] [YSXu_08] adding template [.monitoring-kibana] for index patterns [.monitoring-kibana-6-*]
+[2021-07-01T10:02:43,323][INFO ][o.e.l.LicenseService     ] [YSXu_08] license [f086c77e-b7ea-4ba1-9d2a-dbe7f9ed5b38] mode [basic] - valid
+[2021-07-01T10:02:43,432][INFO ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [YSXu_08] publish_address {127.0.0.1:9200}, bound_addresses {127.0.0.1:9200}, {[::1]:9200}
+[2021-07-01T10:02:43,433][INFO ][o.e.n.Node               ] [YSXu_08] started
+[2021-07-01T10:03:12,289][INFO ][o.e.c.r.a.DiskThresholdMonitor] [YSXu_08] low disk watermark [85%] exceeded on [YSXu_08pSiOjKW1cwqsk_A][YSXu_08][C:\Users\Lenovo\Desktop\elasticsearch-6.5.3\data\nodes\0] free: 10.9gb[10.9%], replicas will not be assigned to this node
+[2021-07-01T10:03:42,300][INFO ][o.e.c.r.a.DiskThresholdMonitor] [YSXu_08] low disk watermark [85%] exceeded on [YSXu_08pSiOjKW1cwqsk_A][YSXu_08][C:\Users\Lenovo\Desktop\elasticsearch-6.5.3\data\nodes\0] free: 10.9gb[10.9%], replicas will not be assigned to this node
+[2021-07-01T10:04:12,314][INFO ][o.e.c.r.a.DiskThresholdMonitor] [YSXu_08] low disk watermark [85%] exceeded on [YSXu_08pSiOjKW1cwqsk_A][YSXu_08][C:\Users\Lenovo\Desktop\elasticsearch-6.5.3\data\nodes\0] free: 10.9gb[10.9%], replicas will not be assigned to this node
+[2021-07-01T10:04:25,945][INFO ][o.e.c.m.MetaDataIndexTemplateService] [YSXu_08] adding template [zipkin:span_template] for index patterns [zipkin:span-*]
+[2021-07-01T10:04:25,989][INFO ][o.e.c.m.MetaDataIndexTemplateService] [YSXu_08] adding template [zipkin:dependency_template] for index patterns [zipkin:dependency-*]
+[2021-07-01T10:04:26,022][INFO ][o.e.c.m.MetaDataIndexTemplateService] [YSXu_08] adding template [zipkin:autocomplete_template] for index patterns [zipkin:autocomplete-*]
+[2021-07-01T10:04:42,326][INFO ][o.e.c.r.a.DiskThresholdMonitor] [YSXu_08] low disk watermark [85%] exceeded on [YSXu_08pSiOjKW1cwqsk_A][YSXu_08][C:\Users\Lenovo\Desktop\elasticsearch-6.5.3\data\nodes\0] free: 10.9gb[10.9%], replicas will not be assigned to this node
+[2021-07-01T10:05:12,341][INFO ][o.e.c.r.a.DiskThresholdMonitor] [YSXu_08] low disk watermark [85%] exceeded on [YSXu_08pSiOjKW1cwqsk_A][YSXu_08][C:\Users\Lenovo\Desktop\elasticsearch-6.5.3\data\nodes\0] free: 10.9gb[10.9%], replicas will not be assigned to this node

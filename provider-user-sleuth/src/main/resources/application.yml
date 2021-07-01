@@ -9,6 +9,12 @@ spring:
     password: 123456
   application:
     name: provider-user-sleuth    # 对应config server所获取的配置文件的{application}
+  zipkin:
+    base-url: http://localhost:9411
+  sleuth:
+    sampler:
+      # 采样率，模式0.1，也就是10%，为了便于观察效果，改为1.0，也就是100%。生产环境建议保持默认。
+      probability: 1.0
 #  cloud:
 #    config:
 #      uri: http://localhost:8991/ # 指定Config Server的地址，默认是http://localhost:8888
@@ -22,7 +28,14 @@ logging:
   level:
     root: INFO
     org.springframework.cloud.sleuth: DEBUG
-
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: '*'
 #management:
 #  endpoint:
 #    health:

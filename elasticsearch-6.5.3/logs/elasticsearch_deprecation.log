@@ -1,0 +1,4 @@
+[2021-07-01T10:04:25,939][WARN ][o.e.d.i.m.MapperService  ] [YSXu_08] Setting index.mapper.dynamic is deprecated since indices may not have more than one type anymore.
+[2021-07-01T10:04:25,944][WARN ][o.e.d.i.m.MapperService  ] [YSXu_08] [_default_] mapping is deprecated since it is not useful anymore now that indexes cannot have more than one type
+[2021-07-01T10:04:25,987][WARN ][o.e.d.i.m.MapperService  ] [YSXu_08] Setting index.mapper.dynamic is deprecated since indices may not have more than one type anymore.
+[2021-07-01T10:04:26,020][WARN ][o.e.d.i.m.MapperService  ] [YSXu_08] Setting index.mapper.dynamic is deprecated since indices may not have more than one type anymore.
